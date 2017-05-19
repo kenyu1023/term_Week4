@@ -1,0 +1,112 @@
+.modalBox {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    top:0;
+    left:0;
+    display: none;
+    width:100%;
+    height:100vh;
+    background-color: rgba(0,0,0,0.8);
+    transition:0.5s all ease;
+
+    #detail-modalBoxs {
+        padding:30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.7em;
+        text-align: center;
+        height:100%;
+        width:80%;
+        margin: auto;
+
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            /* styles for medium only */
+            font-size: 2rem;
+
+        }
+        @media screen and (min-width: 64em) {
+            /* styles for large and onward only */
+            font-size: 2.5rem;
+
+        }
+    }
+
+
+    .closeModal {
+        display: flex;
+        height:100%;
+        justify-content: flex-end;
+        margin-right:20px;
+        font-size: 3rem;
+        position: absolute;
+        top:0;
+        right:0;
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            /* styles for medium only */
+            font-size: 5rem;
+            margin-right:40px
+        }
+        @media screen and (min-width: 64em) {
+            /* styles for large and onward only */
+            font-size: 7rem;
+            margin-right:60px;
+        }
+    }
+}
+
+.works {
+    background-image:url(../img/book-back-min.jpg);
+        background-position: center;
+        background-size: cover;
+    @media screen and (min-width: 64em) {
+        /* styles for large and onward only */
+        padding-top:100px;
+    }
+    overflow:auto;
+
+
+    h1 {
+        font-size: 3em;
+        text-align: center;
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            /* styles for medium only */
+            font-size: 2em;
+            margin-top:20px;
+        }
+        @media screen and (max-width: 39.9375em) {
+            /* styles for small only */
+            font-size: 1.5em;
+            margin:20px 0;
+        }
+    }
+
+    .book-section {
+        //padding-top:100px;
+
+        .each-book {
+            max-width: 1000px;
+            min-height: 600px;
+            margin:auto;
+            padding:50px;
+            @media screen and (max-width: 39.9375em) {
+                /* styles for small only */
+                padding:20px 30px;
+                min-height:100%;
+            } 
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+                padding:40px 30px;
+                min-height:100%;
+            }
+
+
+            img {
+                width:100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.gallery {
+    overflow:auto;
+    width:100%;
+    height:100%;
+    margin:0;
+    padding-top:150px;
+    padding-left:20px;
+    padding-right:20px;
+    
+    h2 {
+        font-size:3rem;
+        text-align: center;
+        z-index: 10px;
+    }
+    
+    .gal-each {
+        margin:7px 0;
+    }
+}

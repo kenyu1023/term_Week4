@@ -1,0 +1,610 @@
+.page-top{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height:100vh;
+    width:100%;
+    @media screen and (max-width: 39.9375em) {
+        /* styles for small only */
+        background-image:url("../img/top-for-small-min.jpeg");
+        background-position:center;
+        background-size:cover;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0.7;
+        @media screen and (max-width: 39.9375em) {
+            /* styles for small only */
+            top:50%;
+            transform:translateY(-50%);
+            left: 1%;
+        }
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            /* styles for medium only */
+            top:50%;
+            transform:translateY(-50%);
+            left: 1%;
+
+        }
+
+    }
+    .video-overlay{
+        background-color :black;
+        opacity:0.9;
+        .video-fit {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            padding:0;
+            margin:0;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+            overflow:hidden;
+            video {
+                position: absolute;
+                min-width:100%;
+                min-height:100%;
+                left: 0;
+                top:0;   
+
+
+            }
+        }
+    }
+
+    /*    .web-title {*/
+    /*        display: flex;
+            align-items:center;
+            justify-content:center;
+            height:80%;
+            @media screen and (min-width: 64em) {
+                 styles for large and onward only 
+                height:90%;
+            }
+    
+            h1 {
+                padding-top:100px;
+            }
+    
+            span {
+                font-family: 'Open Sans', sans-serif;
+                display: block;
+                font-size:3.5rem;
+                opacity:0.9;
+                @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                     styles for medium only 
+                    font-size:7rem;
+                    opacity:0.9;
+                }
+                @media screen and (min-width: 64em) {
+                     styles for large and onward only 
+                    font-size:11rem;
+                    opacity:0.9;
+                }
+    
+            }
+    
+        }*/
+}
+
+.main {
+    width:100%;
+    height:100%;
+
+
+    h3 {
+        font-family: 'Source Sans Pro', sans-serif;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        width:100%;
+        height:100%;
+        max-width: none;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+        /* styles for medium only */
+        h3 {
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            font-size: 60px;
+            width:100%;
+            height:100%;
+            max-width: none;
+            text-align: center;
+        }
+    }
+
+    @media screen and (min-width: 64em) {
+        /* styles for large and onward only */
+        h3 {
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            font-size: 100px;
+            width:100%;
+            height:100%;
+            max-width: none;
+            text-align: center;
+            padding:20px;
+        }
+    }
+
+
+    p {
+        font-size: 1.5em;
+    }
+
+    @media screen and (max-width: 39.9375em) {
+        /* styles for small only */
+        p {
+            font-size: 0.8em;
+        }
+    }
+    //====================== page main section ==========================//
+
+    .main-first-section {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+        padding:50px 20px;
+        width:100%;
+        height:100vh;
+        background-image:url(../img/book2-blur-min.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        @media screen and (max-width: 39.9375em) {
+            /* styles for small only */
+            height:100%;
+        }
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            /* styles for medium only */
+            height:100%;
+            padding:150px 20px;
+
+        }
+
+        .bridge {
+            margin:auto;
+            padding:20px 10px;
+            font-size:0.5em;
+            width:80%;
+            margin:auto;
+            border-bottom: 1px solid white;
+            border-top: 1px solid white;
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+                font-size:1.5em;
+                width:70%;
+                margin:auto;
+                padding:50px 10px;
+            }
+
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+                font-size:2.5em;
+                width:60%;
+                margin:auto;
+                padding:50px 10px;
+
+            }
+        }
+    }
+
+    .main-second-section {
+        width:100%;
+        height:100%;
+        background-image:url(../img/VR-min.jpeg);
+        background-position: center;
+        background-size: cover;
+        overflow:auto;
+        //background-attachment: fixed;
+
+        .about-para {
+            margin:auto;
+            padding:70px 10px 50px 10px;
+            font-size:0.5em;
+            width:100%;
+            height:100%;
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+                margin:auto;
+                padding:70px 20px 50px 20px;
+                font-size:0.9em;
+                width:100%;
+            }
+
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+                margin:auto;
+                padding:120px 20px 100px 20px;
+                font-size:1.3em;
+                width:100%;
+
+
+            }
+
+            .about-para-intro {
+                font-size:1em;
+                width:70%;
+                margin: auto;
+                padding:20px 10px;
+
+                @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                    /* styles for medium only */
+                    font-size:0.8em;
+                    width:80%;
+                    margin: 40px auto 40px auto;
+                    padding:100px 10px;
+                }
+
+                @media screen and (min-width: 64em) {
+                    /* styles for large and onward only */
+                    font-size:1em;
+                    width:60%;
+                    margin: 40px auto 40px auto;
+                    padding:100px 10px;
+
+                }
+
+            }
+
+            i {
+                margin-bottom:10px;
+                margin-left:20px;
+                color:white;
+                @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                    /* styles for medium only */
+                    margin-left:40px;
+                }
+
+                @media screen and (min-width: 64em) {
+                    /* styles for large and onward only */
+                    margin-left:60px;
+
+                }
+                ////width:100%;
+                //text-align: center;
+            }
+
+            .about-icon-section-top {
+                margin: 50px 0;
+                font-size:0.8em;
+
+                h5 {
+                    font-size: 1.5em;
+                    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                        /* styles for medium only */
+                        font-size: 1.7em;
+                    }
+
+                    @media screen and (min-width: 64em) {
+                        /* styles for large and onward only */
+                        font-size: 2.2em;
+
+                    }
+                }
+                @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                    /* styles for medium only */
+                    margin: 50px 10px 10px 20px;
+                    padding:15px;
+                    font-size:0.7em;
+                    line-height:1.1;
+                }
+
+                @media screen and (min-width: 64em) {
+                    /* styles for large and onward only */
+                    margin: 50px 10px 10px 50px;
+                    padding:15px;
+                    font-size:0.6em;
+                    line-height:1.1;
+                    width:80%;
+
+                }
+            }
+
+            .about-icon-section-bottom{
+                margin-bottom: 50px;
+                font-size:0.8em;
+
+                h5 {
+                    font-size: 1.5em;
+                    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                        /* styles for medium only */
+                        font-size: 1.7em;
+                    }
+
+                    @media screen and (min-width: 64em) {
+                        /* styles for large and onward only */
+                        font-size: 2.2em;
+
+                    }
+                }
+                @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                    /* styles for medium only */
+                    margin: 10px 10px 50px 20px;
+                    padding:15px;
+                    font-size:0.7em;
+                    line-height:1.1;
+                }
+
+                @media screen and (min-width: 64em) {
+                    /* styles for large and onward only */
+                    margin: 10px 10px 50px 50px;
+                    padding:15px;
+                    font-size:0.6em;
+                    line-height:1.1;
+                    width:80%;
+
+                }
+            }
+
+        }
+    }
+
+    /*    .for-small-background {
+            background-image:url(../img/pic4.jpeg);
+            background-position: center;
+            background-size: cover;
+            overflow:auto;
+        }*/
+
+    .main-third-section {
+        overflow:auto;
+        height:100%;
+        padding:70px 10px;
+        background-image:url(../img/NewYork-original-white-min.jpg);
+        background-position: center;
+        background-size: cover;
+        overflow:auto;
+        display: flex;
+
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            /* styles for medium only */
+            padding-bottom:0;
+        }
+
+        @media screen and (min-width: 64em) {
+            /* styles for large and onward only */
+            padding-bottom:0
+
+        }
+
+        .about-author {
+            padding:30px ;
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+                padding-bottom:120px;
+                padding-left:50px;
+            }
+
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+                padding-bottom:150px;
+                padding-left:100px;
+                width:80%;
+            }
+
+            h3 {
+                text-align: left;
+                font-size: 1rem;
+                margin-top:20px;
+                color:#191919;
+                @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                    /* styles for medium only */
+                    font-size: 1.6rem;
+                }
+
+                @media screen and (min-width: 64em) {
+                    /* styles for large and onward only */
+                    text-align: left;
+                    font-size: 2.5rem;
+                }
+            }
+            p {
+                font-size: 0.6rem;
+                margin:0;
+                color:#323232;
+                @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                    /* styles for medium only */
+                    font-size: 0.9rem;
+                }
+                @media screen and (min-width: 64em) {
+                    /* styles for large and onward only */              
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .author {
+
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+                flex:1;
+                align-self:flex-end;
+
+
+            }
+
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+                flex:1;
+                align-self:flex-end;
+
+
+
+            }
+        }
+
+    }
+    /*    .first-row {
+            overflow:auto;
+            padding:30px 0 10px 0;
+            width:100%;
+            height:100%;
+            margin:0;
+            top:0;
+    
+    
+            .first-row-left {
+                background-image: url(../img/pic1.jpeg);
+                background-size: cover;
+                background-position: center;
+                @media screen and (min-width: 64em) {
+                     styles for large and onward only 
+                    padding:50px;
+                }
+                @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                     styles for medium only 
+                    padding:30px;
+                }
+                @media screen and (max-width: 39.9375em) {
+                     styles for small only 
+                    padding:10px;
+                }
+    
+                width:100%;
+                height:100%;
+                display: flex;
+                cursor: pointer;
+    
+            }
+            .first-row-right {
+                background-image: url(../img/pic2.jpg);
+                background-size: cover;
+                background-position: center;
+                @media screen and (min-width: 64em) {
+                     styles for large and onward only 
+                    padding:50px;
+                }
+                @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                     styles for medium only 
+                    padding:30px;
+                }
+                @media screen and (max-width: 39.9375em) {
+                     styles for small only 
+                    padding:10px;
+                }
+                width:100%;
+                height:100%;
+                display: flex;
+                cursor: pointer;
+            }
+    
+        }
+    
+        .second-row {
+            overflow:auto;
+            padding:20px 0 10px 0;
+            width:100%;
+            height:100%;
+            margin:0;
+            top:0;
+    
+            .second-row-link {
+                background-image: url(../img/pic3.jpeg);
+                background-size: cover;
+                background-position: center;
+                @media screen and (min-width: 64em) {
+                     styles for large and onward only 
+                    padding:50px;
+                }
+                @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                     styles for medium only 
+                    padding:30px;
+                }
+                @media screen and (max-width: 39.9375em) {
+                     styles for small only 
+                    padding:10px;
+                }
+                width:100%;
+                height:100%;
+                display: flex;
+                cursor: pointer;
+            }
+        }*/
+
+    .fourth-row {
+        overflow:auto;
+        padding:20px 0 30px 0;
+        width:100%;
+        height:100%;
+        margin:0;
+        top:0;
+        background-color:#2d2d2d;
+
+        .fourth-row-left {
+            background-image: url(../img/book2-min.jpeg);
+            background-size: cover;
+            background-position: center;
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+                padding:50px;
+            }
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+                padding:30px;
+            }
+            @media screen and (max-width: 39.9375em) {
+                /* styles for small only */
+                padding:10px;
+            }
+            width:100%;
+            height:100%;
+            display: flex;
+            cursor: pointer;
+        }
+        .fourth-row-center {
+            background-image: url(../img/VR-min.jpeg);
+            background-size: cover;
+            background-position: center;
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+                padding:50px;
+            }
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+                padding:30px;
+            }
+            @media screen and (max-width: 39.9375em) {
+                /* styles for small only */
+                padding:10px;
+            }
+            width:100%;
+            height:100%;
+            display: flex;
+            cursor: pointer;
+        }
+        .fourth-row-right {
+            background-image: url(../img/NewYork-min.jpg);
+            background-size: cover;
+            background-position: center;
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+                padding:50px;
+            }
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+                padding:30px;
+            }
+            @media screen and (max-width: 39.9375em) {
+                /* styles for small only */
+                padding:10px;
+            }
+            width:100%;
+            height:100%;
+            display: flex;
+            cursor: pointer;
+        }
+
+    }
+}
